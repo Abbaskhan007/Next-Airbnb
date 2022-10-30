@@ -25,7 +25,7 @@ export default function Home({ exploreData, cardsData }) {
           <h2 className="text-4xl font-semibold pb-5">Explore Nearby</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
             {exploreData.map(item => (
-              <SmallCard item={item} />
+              <SmallCard key={item.img} item={item} />
             ))}
           </div>
         </section>
