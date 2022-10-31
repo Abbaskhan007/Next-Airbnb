@@ -26,7 +26,7 @@ export default function Map({ searchResult }) {
       onViewportChange={nextViewPort => setViewport(nextViewPort)}
     >
       {searchResult.map(item => (
-        <div key={item.long}>
+        <div key={item.lat}>
           <Marker
             latitude={item.lat}
             longitude={item.long}
